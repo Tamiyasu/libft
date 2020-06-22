@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmurakam <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/20 19:49:06 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/01/20 22:04:24 by tmurakam         ###   ########.fr       */
+/*   Created: 2020/06/22 14:29:24 by tmurakam          #+#    #+#             */
+/*   Updated: 2020/06/22 15:36:22 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_lib.h"
 
 int	ft_atoi(char *str)
 {
@@ -20,7 +22,7 @@ int	ft_atoi(char *str)
 	while (*str == '\t' || *str == '\n' || *str == '\v' ||
 			*str == '\f' || *str == '\r' || *str == ' ')
 		str++;
-	while (*str == '+' || *str == '-')
+if (*str == '+' || *str == '-')
 	{
 		if (*str == '-')
 			input_sign *= -1;
