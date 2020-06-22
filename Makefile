@@ -6,7 +6,7 @@
 #    By: tmurakam <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 17:27:06 by tmurakam          #+#    #+#              #
-#    Updated: 2020/06/22 19:09:44 by tmurakam         ###   ########.fr        #
+#    Updated: 2020/06/22 21:44:49 by tmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,10 @@ RM = rm -f
 SRCS 	=	./ft_isascii.c \
 			./ft_isalpha.c \
 			./ft_isalnum.c \
-			./ft_isdigit.c
+			./ft_isdigit.c \
+			./ft_isprint.c \
+			./ft_toupper.c \
+			./ft_tolower.c
 #./srcs/ft_putchar.c \
 #./srcs/ft_putstr.c  \
 #			./srcs/ft_strcmp.c  \

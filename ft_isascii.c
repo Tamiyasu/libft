@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 20:31:57 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/22 20:32:00 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/22 21:18:08 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	if (c < 128)
+	if (0 <= c && c < 128)
 		return (1);
 	else
 		return (0);

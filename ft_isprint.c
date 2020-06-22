@@ -6,8 +6,15 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 14:37:34 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/22 14:37:36 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/22 21:31:58 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	ft_isprint(int c)
+{
+	if (' ' <= c && c <= '~')
+		return (1);
+	return (0);
+}

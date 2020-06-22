@@ -5,9 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/22 14:46:19 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/22 14:46:21 by tmurakam         ###   ########.fr       */
+/*   Created: 2020/06/22 21:41:26 by tmurakam          #+#    #+#             */
+/*   Updated: 2020/06/22 21:46:43 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	ft_toupper(int c)
+{
+	if (ft_isupper(c))
+		return (c + 'a' - 'A');
+	return (c);
+}
