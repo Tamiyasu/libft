@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tmurakam <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 17:27:06 by tmurakam          #+#    #+#              #
-#    Updated: 2020/06/22 21:44:49 by tmurakam         ###   ########.fr        #
+#    Updated: 2020/06/23 00:35:45 by tmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,12 +18,28 @@ SRCS 	=	./ft_isascii.c \
 			./ft_isdigit.c \
 			./ft_isprint.c \
 			./ft_toupper.c \
-			./ft_tolower.c
-#./srcs/ft_putchar.c \
-#./srcs/ft_putstr.c  \
-#			./srcs/ft_strcmp.c  \
-#			./srcs/ft_strlen.c  \
-#			./srcs/ft_swap.c
+			./ft_tolower.c \
+			./ft_strlen.c  \
+			./strlcpy.c
+#./strlcat.c
+#./strchr.c
+#./strrchr.c
+#./strnstr.c
+#./strncmp.c
+#./atoi.c
+#./memset.c
+#./bzero.c
+#./memcpy.c
+#./memccpy.c
+#./memmove.c
+#./memchr.c
+#./memcmp.c
+
+
+
+
+
+
 OBJS	= 	${SRCS:.c=.o}
 all:	${NAME}
 ${NAME}:	${OBJS}
