@@ -1,4 +1,4 @@
-NAME	=	ft_display_file	
+NAME	=	ftlib.a		
 CC		=	gcc
 CFLAGS	=	-Wall -Wextra -Werror -I./includes
 SRC_DIR	=	./srcs
