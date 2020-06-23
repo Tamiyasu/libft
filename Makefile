@@ -6,7 +6,7 @@
 #    By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 17:27:06 by tmurakam          #+#    #+#              #
-#    Updated: 2020/06/23 00:35:45 by tmurakam         ###   ########.fr        #
+#    Updated: 2020/06/23 19:21:46 by tmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRCS 	=	./ft_isascii.c \
 			./ft_toupper.c \
 			./ft_tolower.c \
 			./ft_strlen.c  \
-			./strlcpy.c
+			./ft_strlcpy.c
 #./strlcat.c
 #./strchr.c
 #./strrchr.c
