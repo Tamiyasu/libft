@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 17:44:22 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/23 00:30:29 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/23 20:41:33 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,7 @@ int ft_isprint(int c);
 int ft_toupper(int c);
 int ft_tolower(int c);
 size_t ft_strlen(const char *s);
+size_t ft_strlcpy(char *dest, const char *src, size_t size);
+size_t  ft_strlcat(char *dst, const char *src, size_t dstsize);
+char *strchr(const char *s, int c);
 #endif
