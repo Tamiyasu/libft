@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 17:44:22 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/23 20:41:33 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/23 21:08:13 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,6 @@ size_t ft_strlen(const char *s);
 size_t ft_strlcpy(char *dest, const char *src, size_t size);
 size_t  ft_strlcat(char *dst, const char *src, size_t dstsize);
 char *strchr(const char *s, int c);
+char *strrchr(const char *s, int c);
+
 #endif
