@@ -6,7 +6,7 @@
 #    By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 17:27:06 by tmurakam          #+#    #+#              #
-#    Updated: 2020/06/23 19:22:49 by tmurakam         ###   ########.fr        #
+#    Updated: 2020/06/23 20:36:11 by tmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,25 +20,20 @@ SRCS 	=	./ft_isascii.c \
 			./ft_toupper.c \
 			./ft_tolower.c \
 			./ft_strlen.c  \
-			./ft_strlcpy.c
-#./strlcat.c
-#./strchr.c
-#./strrchr.c
-#./strnstr.c
-#./strncmp.c
-#./atoi.c
-#./memset.c
-#./bzero.c
-#./memcpy.c
-#./memccpy.c
-#./memmove.c
-#./memchr.c
-#./memcmp.c
-
-
-
-
-
+			./ft_strlcpy.c \
+			./ft_strlcat.c
+#./ft_strchr.c
+#./ft_strrchr.c
+#./ft_strnstr.c
+#./ft_strncmp.c
+#./ft_atoi.c
+#./ft_memset.c
+#./ft_bzero.c
+#./ft_memcpy.c
+#./ft_memccpy.c
+#./ft_memmove.c
+#./ft_memchr.c
+#./ft_memcmp.c
 
 OBJS	= 	${SRCS:.c=.o}
 all:	${NAME}
