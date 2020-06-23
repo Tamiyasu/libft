@@ -6,13 +6,13 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 21:41:26 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/22 21:46:43 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/23 23:40:15 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
 	if (ft_isupper(c))
 		return (c + 'a' - 'A');

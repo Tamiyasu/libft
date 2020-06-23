@@ -6,7 +6,7 @@
 #    By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 17:27:06 by tmurakam          #+#    #+#              #
-#    Updated: 2020/06/23 21:42:17 by tmurakam         ###   ########.fr        #
+#    Updated: 2020/06/23 23:07:35 by tmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ SRCS 	=	./ft_isascii.c \
 
 OBJS	= 	${SRCS:.c=.o}
 all:	${NAME}
-${NAME}:	${OBJS}
+$(NAME):	${OBJS}
 	ar rc ${NAME} $^
 .c.o:
 	gcc -Wall -Wextra -Werror -I./includes -c $< -o $@
