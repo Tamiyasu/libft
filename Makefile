@@ -6,7 +6,7 @@
 #    By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 17:27:06 by tmurakam          #+#    #+#              #
-#    Updated: 2020/06/23 23:07:35 by tmurakam         ###   ########.fr        #
+#    Updated: 2020/06/24 10:23:14 by tmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,27 @@ SRCS 	=	./ft_isascii.c \
 #./ft_memmove.c
 #./ft_memchr.c
 #./ft_memcmp.c
+
+#./ft_itoa.c
+#./ft_putchar_fd.c
+#./ft_putendl_fd.c
+#./ft_putnbr_fd.c
+#./ft_putstr_fd.c
+#./ft_split.c
+#./ft_strjoin.c
+#./ft_strmapi.c
+#./ft_strtrim.c
+#./ft_substr.c
+
+#./ft_lstadd_back.c
+#./ft_lstadd_front.c
+#./ft_lstclear.c
+#./ft_lstdelone.c
+#./ft_lstiter.c
+#./ft_lstlast.c
+#./ft_lstmap.c
+#./ft_lstnew.c
+#./ft_lstsize.c
 
 OBJS	= 	${SRCS:.c=.o}
 all:	${NAME}
