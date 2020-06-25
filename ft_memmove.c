@@ -6,13 +6,13 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 14:39:50 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/25 23:05:25 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/26 01:53:25 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t i;
 
