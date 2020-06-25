@@ -6,11 +6,9 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 14:40:29 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/24 02:25:28 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/25 22:08:23 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

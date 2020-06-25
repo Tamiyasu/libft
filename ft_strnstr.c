@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 14:43:22 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/24 12:25:17 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/25 20:05:24 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	haystack_len = ft_strlen(haystack);
 	needle_len = ft_strlen(needle);
 	i = 0;
-	while ((i + needle_len) < len && (i + needle_len) < haystack_len)
+	while ((i + needle_len) <= len && (i + needle_len) <= haystack_len)
 	{
 		j = 0;
 		while (j < needle_len)

@@ -6,7 +6,7 @@
 #    By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 17:27:06 by tmurakam          #+#    #+#              #
-#    Updated: 2020/06/24 21:02:23 by tmurakam         ###   ########.fr        #
+#    Updated: 2020/06/25 22:12:58 by tmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,13 +26,13 @@ SRCS 	=	./ft_isascii.c \
 			./ft_strrchr.c \
 			./ft_strnstr.c \
 			./ft_strdup.c \
-			./ft_strncmp.c
-#./ft_atoi.c
-#./ft_memset.c
-#./ft_bzero.c
-#./ft_memcpy.c
-#./ft_memccpy.c
-#./ft_memmove.c
+			./ft_strncmp.c \
+			./ft_atoi.c \
+			./ft_memset.c \
+			./ft_bzero.c \
+			./ft_memcpy.c \
+			./ft_memccpy.c \
+			./ft_memmove.c
 #./ft_memchr.c
 #./ft_memcmp.c
 #./ft_calloc.c
