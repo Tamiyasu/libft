@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmurakam <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 20:51:57 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/27 20:34:44 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 13:41:18 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		count_words(char const *str, char c)
+static int	count_words(char const *str, char c)
 {
 	int		return_i;
 	int		gap_f;
@@ -36,7 +36,7 @@ int		count_words(char const *str, char c)
 	return (return_i);
 }
 
-int		count_word_length(char const *str, char c)
+static int	count_word_length(char const *str, char c)
 {
 	char *i_p;
 
@@ -46,7 +46,7 @@ int		count_word_length(char const *str, char c)
 	return (i_p - str);
 }
 
-void	free_2d(char ***pp)
+static void	free_2d(char ***pp)
 {
 	char **it_pp;
 
@@ -54,10 +54,10 @@ void	free_2d(char ***pp)
 	while (*it_pp)
 		free(*(it_pp++));
 	free(*pp);
-	pp = 0;
+	*pp = 0; /*                                                                              check need*/
 }
 
-char	**ft_split(char const *s, char c)
+char		**ft_split(char const *s, char c)
 {
 	char	**return_pp;
 	char	**it_pp;
@@ -78,7 +78,7 @@ char	**ft_split(char const *s, char c)
 			ft_strlcpy(*(it_pp++), s, word_length + 1);
 			s += word_length;
 		}
-		if (!words)
+		if (words == -1)/* (!words)                                                          check need?*/
 			free_2d(&return_pp);
 	}
 	return (return_pp);

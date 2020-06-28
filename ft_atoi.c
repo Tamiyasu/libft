@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
+/*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 14:29:24 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/25 13:15:43 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 15:24:38 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,6 @@ int	ft_atoi(const char *str)
 		str++;
 	}
 	while ('0' <= *str && *str <= '9')
-	{
-		return_int = return_int * 10 + *str - '0';
-		str++;
-	}
+		return_int = return_int * 10 + *(str++) - '0';
 	return (input_sign * return_int);
 }

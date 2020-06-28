@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
+/*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 02:08:22 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/27 15:41:24 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 13:46:33 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,12 @@ char	*ft_itoa(int n)
 	}
 	if (n < 0)
 		tmp[o++] = '-';
-	return_s = malloc(sizeof(char) * (o + 1));
+	return_s = ft_calloc(o + i, sizeof(char));
 	if (return_s)
 	{
 		i = 0;
 		while (o)
 			*(return_s + i++) = tmp[--o];
-		*(return_s + i) = 0;
 	}
 	return (return_s);
 }
