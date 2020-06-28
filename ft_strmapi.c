@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 13:33:26 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/28 17:39:22 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 17:53:30 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 
 	s_len = ft_strlen(s);
-	return_s = calloc(s_len + 1, sizeof(char));
+	return_s = ft_calloc(s_len + 1, sizeof(char));
 	if (return_s)
 	{
 		i = 0;
