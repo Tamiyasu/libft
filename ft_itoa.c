@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 02:08:22 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/28 13:46:33 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 17:32:56 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_itoa(int n)
 	}
 	if (n < 0)
 		tmp[o++] = '-';
-	return_s = ft_calloc(o + i, sizeof(char));
+	return_s = ft_calloc(o + 1, sizeof(char));
 	if (return_s)
 	{
 		i = 0;
