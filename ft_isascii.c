@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
+/*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 20:31:57 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/22 21:18:08 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 13:48:31 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int	ft_isascii(int c)
 {
-	if (0 <= c && c < 128)
-		return (1);
-	else
-		return (0);
+	return (0 <= c && c < 128);
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tmurakam <tmurakam@student.42tokyo.>       +#+  +:+       +#+        */
+/*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 01:22:46 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/27 01:59:26 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 15:47:07 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		c_included_str(char c, char const *str)
+static int	c_included_str(char c, char const *str)
 {
 	while (*str)
 	{
@@ -34,17 +34,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s = 0;
 	while (c_included_str(*(s1 + s), set))
 		s++;
-	if (s == s1_len)
-		s = 0;
 	e = s1_len;
 	while (c_included_str(*(s1 + e - 1), set) && 0 < e)
 		e--;
-	return_s = malloc(sizeof(char) * (e - s) + 1);
-	if (return_s)
-	{
-		if (e)
-			ft_memcpy(return_s, s1 + s, (e - s));
-		*(return_s + (e - s)) = 0;
-	}
+	if (s == s1_len)
+		s = 0;
+	return_s = ft_calloc((e - s) + 1, sizeof(char));
+	if (return_s && e)
+		ft_memcpy(return_s, s1 + s, (e - s));
 	return (return_s);
 }
