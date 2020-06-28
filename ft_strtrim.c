@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/27 01:22:46 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/28 15:47:07 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 18:06:55 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	c_included_str(char c, char const *str)
 	return (0);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char		*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	s1_len;
 	size_t	s;
