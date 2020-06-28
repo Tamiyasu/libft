@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 20:51:57 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/28 13:41:18 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/28 17:45:52 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,17 +46,6 @@ static int	count_word_length(char const *str, char c)
 	return (i_p - str);
 }
 
-static void	free_2d(char ***pp)
-{
-	char **it_pp;
-
-	it_pp = *pp;
-	while (*it_pp)
-		free(*(it_pp++));
-	free(*pp);
-	*pp = 0; /*                                                                              check need*/
-}
-
 char		**ft_split(char const *s, char c)
 {
 	char	**return_pp;
@@ -73,13 +62,12 @@ char		**ft_split(char const *s, char c)
 			while (*s == c)
 				s++;
 			word_length = count_word_length(s, c);
-			if (!(*it_pp = ft_calloc(word_length + 1, sizeof(char))))
-				break ;
-			ft_strlcpy(*(it_pp++), s, word_length + 1);
-			s += word_length;
+			if ((*it_pp = ft_calloc(word_length + 1, sizeof(char))))
+			{
+				ft_strlcpy(*(it_pp++), s, word_length + 1);
+				s += word_length;
+			}
 		}
-		if (words == -1)/* (!words)                                                          check need?*/
-			free_2d(&return_pp);
 	}
 	return (return_pp);
 }
