@@ -86,8 +86,9 @@ char		**ft_split(char const *s, char c)
 				s++;
 			word_length = count_word_length(s, c);
 			if ((*it_pp = ft_calloc(word_length + 1, sizeof(char))))
-				ft_strlcpy(*(it_pp++), s, word_length + 1);
+				ft_strlcpy(*(it_pp), s, word_length + 1);
 			s += word_length;
+			it_pp++;
 		}
 		return_pp = inter_check_and_free(return_pp, it_pp - return_pp);
 	}
