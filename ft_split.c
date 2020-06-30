@@ -6,7 +6,7 @@
 /*   By: tmurakam <tmurakam@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 20:51:57 by tmurakam          #+#    #+#             */
-/*   Updated: 2020/06/28 17:45:52 by tmurakam         ###   ########.fr       */
+/*   Updated: 2020/06/30 09:41:33 by tmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,29 @@ static int	count_word_length(char const *str, char c)
 	return (i_p - str);
 }
 
+static char	**inter_check_and_free(char **p, int words)
+{
+	int i;
+
+	i = 0;
+	while (i < words)
+	{
+		if (!*(p + i++))
+		{
+			i = 0;
+			while (i < words)
+			{
+				if (!*(p + i))
+					free(*(p + i));
+				i++;
+			}
+			free(p);
+			return (NULL);
+		}
+	}
+	return (p);
+}
+
 char		**ft_split(char const *s, char c)
 {
 	char	**return_pp;
@@ -63,11 +86,10 @@ char		**ft_split(char const *s, char c)
 				s++;
 			word_length = count_word_length(s, c);
 			if ((*it_pp = ft_calloc(word_length + 1, sizeof(char))))
-			{
 				ft_strlcpy(*(it_pp++), s, word_length + 1);
-				s += word_length;
-			}
+			s += word_length;
 		}
+		return_pp = inter_check_and_free(return_pp, it_pp - return_pp);
 	}
 	return (return_pp);
 }
